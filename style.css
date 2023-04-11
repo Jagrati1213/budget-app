@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bgmain: #f7f9fd;
+    --darkblue: #363d55;
+    --drakblue-200:#414a67;
+    --lightblue:#587ef4;
+    --white: #d0d0d0;
+    --red:#ff475a;
+}
+body{
+    background-color: var(--bgmain);
+}
+section{
+    width: 90%;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+.main_container{
+   width: 100%;
+}
+.sub_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 3em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section h3{
+  color: var(--darkblue);
+  font-weight: 600;
+  margin: 1em 0;
+}
+.main_container input{
+    display: block;
+    width: 100%;
+    padding: .6em .3em;
+    border: 1px solid var(--white);
+    border-radius: .3em;
+    color:var(--drakblue-200);
+    outline: none;
+    font-weight: 400;
+    margin: 0.6em 0;
+}
+.main_container input:focus{
+  border-color:var(--lightblue);
+}
+.main_container input[type ='number']{
+    appearance: none;
+}
+.total_amount_container,
+.user_amount_container{
+   background-color: #fff;
+   padding:1.25em .9em;
+   border-radius: .3em;
+   box-shadow:0 0.6em 1.2em rgb(28, 0,80,0.06);   
+}
+.output_container{
+   background: var(--lightblue);
+   color:#fff;
+   border-radius: 0.3em;
+   box-shadow:0 0.6em 1.2em rgb(28, 0,80,0.06);   
+   font-weight: 500;
+   margin: 2em 0;
+   padding:1.2em;
+   width: 100%;
+}
+.output_container p{
+    font-weight: 500;
+    margin-bottom:.6em;
+}
+.output_container span{
+    display: block;
+    text-align: center;
+    font-weight:400;
+    color:#e5e5e5;
+}
+.submit{
+    font-size: 1em;
+    margin-top:0.6em;
+    background:var(--lightblue);
+    border: none;
+    outline: none;
+    color: var(--bgmain);
+    padding: .6em 1.2em;
+    border-radius: .3em;
+    cursor: pointer;
+}
+.list_container{
+    background: var(--bgmain);
+    padding: 1.8em 1.2em;
+    box-shadow:0 0.6em 1.2em rgb(28, 0,80,0.06);  
+    border-radius: .6em; 
+}
+.list_container .list{
+    padding: 0.4em .3em;
+    border-left:.3em solid var(--lightblue);
+    width: 100%;
+    margin-bottom: 1em;
+}
+.list_container .list h4{
+    font-weight: normal;
+    margin-left: .6em;
+}
+.list_container .list button{
+    padding: .3em .3em;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--lightblue);
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 .4em;
+    font-size: 1em;
+}
+.list_parent{
+    height: 20vh;
+    max-height:600px;
+    overflow-y: scroll;
+}
+.list_parent::-webkit-scrollbar{
+   width: 4px;
+}
+.list_parent::-webkit-scrollbar-track{
+    background: var(--bgmain);  
+}
+.list_parent::-webkit-scrollbar-thumb{
+    background: var(--drakblue-200);
+}
+.hide{
+    display: none;
+}
+.error_msg{
+    font-size: 14px;
+    color: var(--red);
+}
+@media only screen and (max-width:624px){
+   html{
+    font-size: 14px;
+   }
+    .sub_container{
+        grid-template-columns: 1fr;
+        background-color: #fff;
+        padding: 1.25em 0.9em;
+        border-radius: 0.3em;
+        box-shadow: 0 0.6em 1.2em rgb(28, 0,80,0.06);
+        gap: 12px;
+    }
+    .total_amount_container, 
+    .user_amount_container{
+       box-shadow: none;  
+    }
+    .output_container {
+      padding: 10px 8px;
+    }
+}
+
