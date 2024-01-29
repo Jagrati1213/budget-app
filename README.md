@@ -71,3 +71,8 @@ Contributions are welcome! If you'd like to contribute to the development of the
 - Make your changes and submit a pull request.
 
 Feel free to reach out if you have any questions or suggestions!
+
+## Project Image:
+![image](https://github.com/Jagrati1213/budget-app/assets/85276293/0dd462c0-a869-4498-b344-4a711d32f10a)
+![image](https://github.com/Jagrati1213/budget-app/assets/85276293/b13fbca1-5187-45da-ac42-66ecc26fcd47)
+
