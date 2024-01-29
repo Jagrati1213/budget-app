@@ -1,9 +1,6 @@
 # Budget App
 The Budget App is a simple and intuitive web application designed to help users manage their finances effectively. It allows users to create budgets, track expenses, and analyze their spending. The application is built using HTML, CSS, and JavaScript, making it accessible and easy to use for anyone with a web browser.
-
-## Live Link 🔗:
-
-_Link - [Budget app](https://Jagrati1213.github.io/budget-app)_
+[Budget app](https://Jagrati1213.github.io/budget-app)_
 
 ## Features ⤵️:
 
